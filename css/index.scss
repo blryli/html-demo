@@ -1,0 +1,132 @@
+.banner{
+    background: url(../img/banner1_home.png) no-repeat center center;
+    height: 600px;
+    .sp-container{
+        position: relative;
+        height: 100%;
+    }
+    .p-a{
+        width: 100%;
+        bottom: 40px;
+        padding: 0 15px;
+    }
+    .span{
+        font-size: 22px;
+        color: #fff;
+        cursor: default;
+    }
+    .el-button{
+        color: #fff;
+        border-radius: 0;
+        font-size: 15px;
+        padding: 16.5px 6px;
+        position: relative;
+        -webkit-transition: 0s; 
+        transition: 0s;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            left: -25px;
+            top: -1px;
+        }
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            right: -25px;
+            top: -1px;
+        }
+        &:first-child{
+            background-color: #1baaba;
+            border-color: #1baaba;
+            margin-left: 60px;
+            &::before{
+                background-color: #1baaba;
+            }
+            &::after{
+                background-color: #1baaba;
+            }
+            &:hover{
+                background-color: #119cac;
+                border-color: #119cac;
+                &::before{
+                    background-color: #119cac;
+                }
+                &::after{
+                    background-color: #119cac;
+                }
+            }
+        }
+        &:last-child{
+            background-color: #a2d308;
+            border-color: #a2d308;
+            margin-left: 64px;
+            &::before{
+                background-color: #a2d308;
+            }
+            &::after{
+                background-color: #a2d308;
+            }
+            &:hover{
+                background-color: #96c402;
+                border-color: #96c402;
+                &::before{
+                    background-color: #96c402;
+                }
+                &::after{
+                    background-color: #96c402;
+                }
+            }
+        }
+        span{
+            position: relative;
+            z-index: 1;
+            padding-left: 34px;
+        }
+        .iconfont{
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            font-size: 28px;
+        }
+    }
+}
+.main{
+    .bg{
+        &:first-child{
+            background: url(../img/banner2_home.png) no-repeat center 150px;
+            background-color: #f1f1f1;
+        }
+        &:nth-child(2){
+            background: url(../img/banner3_home.png) no-repeat center 200px;
+            background-color: #1baaba;
+        }
+        &:last-child{
+            background: url(../img/banner4_home.png) no-repeat center 230px;
+            .title{
+                padding-top: 78px;
+            }
+        }
+    }
+    .title{
+        padding-top: 54px;
+        text-align: center;
+        color: #062b2f;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner{
+        .p-a{
+            padding: 0 20%;
+        }
+    }
+}

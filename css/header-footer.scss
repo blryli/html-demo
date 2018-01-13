@@ -1,6 +1,8 @@
 .header {
-    line-height: 50px;
+    height: 80px;
+    line-height: 80px;
     position: relative;
+    background-color: #052b2e;
 }
 
 .logo {
@@ -29,25 +31,24 @@
     }
     >li {
         float: none;
-        height: 50px;
-        padding: 0 20px;
+        height: 80px;
+        text-align: right;
         >a {
-            font-size: 16px;
+            font-size: 20px;
             word-spacing: normal;
             color: #333;
             padding: 0;
+            color: #fff;
             &.active {
-                color: #ff6000;
-                font-weight: bold;
+                color: #1baab9;
             }
             &:hover {
-                font-weight: bold;
                 background-color: transparent;
-                color: #ff6000;
+                color: #1baab9;
             }
             &:focus,
             &:active {
-                color: #ff6000;
+                color: #1baab9;
             }
         }
         &+li {
@@ -116,9 +117,6 @@
         li {
             float: left;
             padding: 0;
-            &+li {
-                margin-left: 10%;
-            }
         }
     }
     .icon {
@@ -131,38 +129,13 @@
 
 //footer
 .footer {
-    border-top: 1px solid #ddd;
+    height: 100px;
+    line-height: 100px;
     text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    ul {
-        overflow: hidden;
-        display: inline-block;
-        li {
-            float: left;
-            &+li {
-                margin-left: 20px;
-            }
-            a {
-                color: #333;
-                opacity: .7;
-                &:hover {
-                    opacity: .9;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-    .bei {
-        margin-top: 15px;
-        span {
-            color: #333;
-            opacity: .6;
-        }
-        i {
-            color: #888;
-            opacity: .3;
-            margin: 0 10px;
-        }
+    background-color: #052b2e;
+    span{
+        font-size: 16px;
+        color: #fff;
+        opacity: .5;
     }
 }

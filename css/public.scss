@@ -9,6 +9,9 @@
 .m-t-30 {
     margin-top: 30px;
 }
+.m-t-40 {
+    margin-top: 40px;
+}
 
 .sp-bg {
     background-color: #f2f2f2;
@@ -52,6 +55,22 @@
     text-align: right;
 }
 
+//浮动
+.f-r{
+    float: right;
+}
+.f-l{
+    float: left;
+}
+
+//定位
+.p-a{
+    position: absolute;
+}
+.p-r{
+    position: relative;;
+}
+
 //虚线
 .sp-line {
     height: 0;
@@ -69,12 +88,12 @@
 
 @media (min-width: 992px) {
     .sp-container {
-        width: 970px;
+        width: 880px;
     }
 }
 
 @media (min-width: 1200px) {
     .sp-container {
-        width: 1200px;
+        width: 1000px;
     }
 }
