@@ -5,6 +5,30 @@
         position: relative;
         height: 100%;
     }
+    &.doctor{
+        background: url(../img/banner1_doc.png) no-repeat center center;
+    }
+    &.about{
+        height: 300px;
+        background: url(../img/banner_about.png) no-repeat center center;
+        .tenet{
+            text-align: center;
+            color: #fff;
+            h1{
+                font-weight: normal;
+                padding-top: 54px;
+                font-size: 30px;
+            }
+            h2{
+                font-weight: normal;
+                font-size: 24px;
+                padding-top: 55px;
+                &+h2{
+                    padding-top: 18px;
+                }
+            }
+        }
+    }
     .p-a{
         width: 100%;
         bottom: 40px;
@@ -100,18 +124,116 @@
 }
 .main{
     .bg{
+        height: 800px;
         &:first-child{
             background: url(../img/banner2_home.png) no-repeat center 150px;
             background-color: #f1f1f1;
         }
         &:nth-child(2){
-            background: url(../img/banner3_home.png) no-repeat center 200px;
+            background: url(../img/banner3_home.png) no-repeat center center;
             background-color: #1baaba;
         }
         &:last-child{
-            background: url(../img/banner4_home.png) no-repeat center 230px;
+            background: url(../img/banner4_home.png) no-repeat center 257px;
             .title{
-                padding-top: 78px;
+                padding-top: 70px;
+            }
+        }
+    }
+    &.doctor{
+        .bg{
+            .sp-container{
+                position: relative;
+            }
+            &:first-child{
+                background: url(../img/banner2_doc.png) no-repeat center center;
+                .title{
+                    position: absolute;
+                    left: 34px;
+                    top: 110px;
+                }
+            }
+            &:nth-child(2){
+                background: url(../img/banner3_doc.png) no-repeat center center;
+                background-color: #1baaba;
+                .title{
+                    padding-top: 70px;
+                }
+            }
+            &:last-child{
+                background: url(../img/banner4_doc.png) no-repeat center center;
+                .title{
+                    position: absolute;
+                    right: 0;
+                    top: 20px;
+                }
+            }
+        }
+    }
+    &.about{
+        .bg{
+            background: #f1f1f1;
+            padding: 30px 0 70px;
+            .sp-container{
+                position: relative;
+                background-color: #fff;
+                height: 398px;
+                .img{
+                    width: 290px;
+                    position: absolute;
+                    top: 0;
+                    img{
+                    }
+                    h1{
+                        position: absolute;
+                        color: #062b2f;
+                        font-size: 30px;
+                        font-weight: normal;
+                        left: 86px;
+                        top: 76px;
+                    }
+                }
+                &:first-child{
+                    .img{
+                        left: 0;
+                    }
+                    .about-text-box{
+                        padding-left: 290px;
+                    }
+                }
+                &:last-child{
+                    .img{
+                        right: 0;
+                    }
+                    .about-text-box{
+                        padding-right: 290px;
+                    }
+                }
+                .about-text-box{
+                    .about-text{
+                        padding: 0 38px;
+                        .about-line{
+                            padding: 38px 0;
+                            span{
+                                display: block;
+                                height: 4px;
+                                width: 138px;
+                                background-color: #dbdbdb;
+                            }
+                        }
+                        p{
+                            font-size: 20px;
+                            color: #778182;
+                            &+p{
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                    .about-content{
+                        overflow-y: auto;
+                        height: 280px;
+                    }
+                }
             }
         }
     }

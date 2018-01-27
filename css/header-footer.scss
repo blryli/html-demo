@@ -37,18 +37,16 @@
             font-size: 20px;
             word-spacing: normal;
             color: #333;
-            padding: 0;
+            padding: 0 10px 8px;
             color: #fff;
-            &.active {
-                color: #1baab9;
-            }
+            color: #fff;
+            &.active,
+            &:focus,
+            &:active,
             &:hover {
                 background-color: transparent;
                 color: #1baab9;
-            }
-            &:focus,
-            &:active {
-                color: #1baab9;
+                border-bottom: 2px solid #1baab9;
             }
         }
         &+li {
